@@ -1,0 +1,45 @@
+server:
+  port: 7072
+  servlet:
+    context-path: /UserService
+spring:
+  application:
+    name: UserService
+  codec:
+    max-in-memory-size: 3MB
+  main:
+    allow-bean-definition-overriding: true
+  r2dbc:
+    url: r2dbc:h2:mem:///userdb?options=DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    name: sa
+    password: sa
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+  h2:
+    console:
+      enabled: true
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.boot.autoconfigure: INFO
+    org.springframework.web.client.RestTemplate: DEBUG
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9092/eureka/
+management:
+  endpoint:
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      prometheus:
+        enabled: true

@@ -1,0 +1,5 @@
+com\kr\poc\userservice\config\CommonConfiguration.class
+com\kr\poc\userservice\repository\UserRepository.class
+com\kr\poc\userservice\controller\UserServiceController.class
+com\kr\poc\userservice\entity\User.class
+com\kr\poc\userservice\UserServiceStarter.class

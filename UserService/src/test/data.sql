@@ -1,0 +1,2 @@
+INSERT INTO USER (id, username,usertype,emailid,mobileNumber,status,createdTS,lastModifiedByTS) VALUES (1, 'Srini','P','srini@gmail.com','9123456789','ACTIVE','2020-04-06 16:30:00','2020-04-06 16:30:00');
+INSERT INTO USER (id, username,usertype,emailid,mobileNumber,status,createdTS,lastModifiedByTS) VALUES (2, 'Kishore','P','srini@gmail.com','9123456123','ACTIVE','2020-04-06 16:30:00','2020-04-06 16:30:00');

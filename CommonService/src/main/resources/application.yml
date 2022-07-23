@@ -1,0 +1,30 @@
+server:
+  port: 7070
+  servlet:
+    context-path: /CommonService
+spring:
+  application:
+    name: CommonService
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://aws-mysql-db.cfevmamsttts.ap-south-1.rds.amazonaws.com
+    username: admin
+    password: Admin123
+    jpa:
+      hibernate:
+        ddl-auto: validate
+      show-sql: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9092/eureka/
+  instance:
+    hostname: localhost
+management:
+  endpoint:
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'

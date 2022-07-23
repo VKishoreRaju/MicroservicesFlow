@@ -1,0 +1,3 @@
+com\kr\poc\common\CommonStarter.class
+com\kr\poc\common\client\MasterDataClient.class
+com\kr\poc\common\controller\CommonController.class

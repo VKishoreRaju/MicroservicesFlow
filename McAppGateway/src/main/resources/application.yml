@@ -1,0 +1,29 @@
+server:
+   port: 9070
+spring:
+   application:
+      name: MC-App-Gateway
+   cloud:
+      gateway:
+         globalcors:
+            corsConfigurations:
+               '[/**]':
+                  allowedOrigins: '*'
+                  allowedMethods: '*'
+                  allowedHeaders: '*'
+         routes:
+         -  id: user-service
+            uri: lb://UserService
+            predicates:
+            #- Host=**localhost
+            - Path=/UserService/api/v1/**
+            filters:
+            - RemoveRequestHeader=Cookie
+         -  id: common-service
+            uri: lb://CommonService
+            predicates:
+            - Path=/CommonService/api/v1/**
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:9092/eureka/

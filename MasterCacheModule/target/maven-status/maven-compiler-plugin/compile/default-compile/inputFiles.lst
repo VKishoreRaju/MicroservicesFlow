@@ -1,0 +1,5 @@
+G:\Kishore\POC\SpringCloudGatewayPOC\SpringMicroservices\MasterCacheModule\src\main\java\com\kr\poc\master\controller\CityMasterController.java
+G:\Kishore\POC\SpringCloudGatewayPOC\SpringMicroservices\MasterCacheModule\src\main\java\com\kr\poc\master\service\CityServiceImpl.java
+G:\Kishore\POC\SpringCloudGatewayPOC\SpringMicroservices\MasterCacheModule\src\main\java\com\kr\poc\master\model\CityMaster.java
+G:\Kishore\POC\SpringCloudGatewayPOC\SpringMicroservices\MasterCacheModule\src\main\java\com\kr\poc\master\config\RedisConfig.java
+G:\Kishore\POC\SpringCloudGatewayPOC\SpringMicroservices\MasterCacheModule\src\main\java\com\kr\poc\master\MasterStarter.java
